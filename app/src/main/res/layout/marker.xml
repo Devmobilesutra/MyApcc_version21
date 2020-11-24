@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="@dimen/dp_5"
+    android:background="@color/black_semi_transparent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@drawable/ic_launcher"
+        android:id="@+id/img_truck"
+        android:layout_width="@dimen/marker_image_width"
+        android:layout_height="@dimen/marker_image_height" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:text="hello svc scx sc fvcxs c v xsvc vdc xc v "
+        android:gravity="center"
+        android:id="@+id/txt_truck_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:text="truck no  sc v dsvbv dbvbvfs dvvc"
+        android:id="@+id/txt_truck_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

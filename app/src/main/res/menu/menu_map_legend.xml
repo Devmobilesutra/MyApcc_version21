@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/truck1"
+        android:showAsAction="always"
+        android:title="@string/truck_1"
+        android:icon="@drawable/red"/>
+
+    <item
+        android:id="@+id/truck2"
+        android:showAsAction="always"
+        android:title="@string/truck_2"
+        android:icon="@drawable/blue"/>
+
+    <item
+        android:id="@+id/dustbin"
+        android:showAsAction="always"
+        android:title="@string/dustbin"
+        android:icon="@drawable/green"/>
+
+</menu>

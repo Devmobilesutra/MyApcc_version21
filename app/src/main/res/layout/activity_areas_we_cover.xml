@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.change22.myapcc.activities.ActivityAreasWeCover">
+
+    <include
+        android:id="@+id/toolbar_upload_issues"
+        layout="@layout/toolbar_upload_issues" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/areas_we_cver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:text="Areas We Cover"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ferguson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+
+            android:autoLink="map"
+            android:text="1. Fergusson College Road"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/jangali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:text="2. Jangali Maharaj Road"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/iti_aundh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:text="3. ITI Road, Aundh"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/baner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:text="4. Baner Road"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/baner_gaon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:text="5. Baner Gaon Road"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_areas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

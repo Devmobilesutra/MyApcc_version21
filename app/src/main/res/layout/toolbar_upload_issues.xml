@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/img_back"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/back"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/toolbar_icon_padding"
+        android:background="@android:color/transparent"/>
+
+
+
+    <TextView
+        android:id="@+id/txt_toolbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/upload_issues"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

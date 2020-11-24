@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/img_more"
+    android:layout_width="@dimen/more_width"
+    android:layout_height="@dimen/more_height"
+    android:src="@drawable/final_more_button"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:padding="@dimen/dp_5"
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    <TextView
+        android:id="@+id/txt_more_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/yellow"
+        android:padding="@dimen/dp_5"
+        android:text="area"
+        android:layout_marginRight="@dimen/dp_5"
+        android:textColor="#00ACC1"
+        android:textSize="@dimen/text_18sp"
+        android:visibility="gone">
+
+    </TextView>
+    <TextView
+        android:id="@+id/txt_more_page_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/yellow"
+        android:padding="@dimen/dp_5"
+        android:text="Page No"
+        android:layout_marginRight="@dimen/dp_5"
+        android:textColor="#00ACC1"
+        android:textSize="@dimen/text_18sp"
+        android:visibility="gone">
+
+    </TextView>
+    <TextView
+        android:id="@+id/txt_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/yellow"
+        android:padding="@dimen/dp_5"
+        android:text="More.."
+        android:layout_marginRight="@dimen/dp_5"
+        android:textColor="#00ACC1"
+        android:textSize="@dimen/text_18sp"
+        >
+
+    </TextView>
+</RelativeLayout>
+</RelativeLayout>

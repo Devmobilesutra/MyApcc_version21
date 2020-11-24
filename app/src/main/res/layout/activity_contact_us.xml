@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.change22.myapcc.activities.ActivityContactUs">
+
+    <include
+        android:id="@+id/toolbar_upload_issues"
+        layout="@layout/toolbar_upload_issues" />
+
+    <TextView
+        android:id="@+id/para3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_upload_issues"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_18sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Contacts:"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_below="@+id/para3"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_18sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="To "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_16sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="CEO@myapcc.com"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:textSize="@dimen/text_16sp"
+        android:text="Here are my inputs/feedback:"/>
+
+    <EditText
+        android:id="@+id/edit_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_margin="@dimen/dp_15"
+        android:gravity="top"
+        android:minLines="6"
+        android:maxLines="6"
+        android:lines="6"
+        android:textSize="@dimen/text_16sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/here"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_below="@+id/edit_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="Send"/>
+
+</RelativeLayout>

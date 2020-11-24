@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.change22.myapcc.activities.Activity_upload_new_report">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_upload_issues"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_actionbar">
+
+        <TextView
+            android:id="@+id/txt_image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Image"
+            android:padding="@dimen/padding_16"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/img_camera"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_below="@+id/txt_image_title"
+            android:padding="@dimen/padding_16"
+            android:src="@drawable/camera_grey"/>
+
+
+        <Button
+            android:id="@+id/btn_browse"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="BROWSE"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:padding="@dimen/padding_16"
+            android:layout_alignTop="@+id/img_camera"
+            android:layout_toRightOf="@+id/btn_ok"
+            android:layout_toEndOf="@+id/btn_ok" />
+
+        <TextView
+            android:id="@+id/txt_issue_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_camera"
+            android:text="Issue Title"
+            android:padding="@dimen/padding_16"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/edit_issue_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_issue_title"
+            android:hint="Enter Title"
+            android:inputType="textCapSentences"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/padding_16"
+            android:paddingRight="@dimen/padding_16"
+            android:paddingBottom="@dimen/padding_16"/>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/edit_issue_title"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:background="@drawable/button"
+            android:padding="@dimen/padding_16"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Note:\n 1.Your image should have valid GPS coordinates.\n 2.Heavy images may take a little time to upload for slow connection."
+            android:padding="@dimen/padding_16"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

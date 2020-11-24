@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F7F3D</color>
+    <color name="colorPrimaryDark">#1B5E20</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="material_grey">#687982</color>
+    <color name="black_semi_transparent">#A0000000</color>
+    <color name="yellow">#FFF176</color>
+    <color name="colororange">#FF4500</color>
+    <color name="colorgreen">#00ff00</color>
+    <color name="app_color">#00a4ff</color>
+    <color name="map_semi_transparent">#00FFFFFF</color>
+    <color name="red">#e73e0a</color>
+    <color name="blue">#1e37dc</color>
+    <color name="green">#175805</color>
+    <color name="grey_dark">#000000</color>
+</resources>

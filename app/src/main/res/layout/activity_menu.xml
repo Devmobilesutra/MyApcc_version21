@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/map_semi_transparent">
+
+
+        <RelativeLayout
+            android:id="@+id/rlayout_header_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/map_semi_transparent">
+
+
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@color/map_semi_transparent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="@dimen/dp_130"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/red"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/dp_5"
+                        android:text="Auto Truck"
+                        android:textColor="@color/grey_dark" />
+
+                    <TextView
+                        android:layout_width="@dimen/dp_130"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/blue"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:text="Litter Picker"
+                        android:textColor="@color/grey_dark" />
+
+                    <TextView
+                        android:layout_width="@dimen/dp_130"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_7"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/green"
+                        android:drawablePadding="@dimen/dp_7"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:text="Bin"
+                        android:visibility="gone"
+                        android:textColor="@color/grey_dark" />
+
+                    <TextView
+                        android:layout_width="@dimen/dp_130"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:layout_marginLeft="@dimen/dp_7"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/plus_red"
+                        android:drawablePadding="@dimen/dp_7"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:gravity="center_vertical"
+                        android:text="Free Healthcare"
+                        android:textColor="@color/grey_dark" />
+
+                </LinearLayout>
+
+        </RelativeLayout>
+</RelativeLayout>

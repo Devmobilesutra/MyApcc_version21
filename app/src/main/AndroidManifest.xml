@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.change22.myapcc">
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.google.android.c2dm.permission.SEND" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+
+    <!--<uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />-->
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK"
+        android:required="false" />
+    <uses-permission
+        android:name="com.google.android.c2dm.permission.RECEIVE"
+        android:required="false" />
+    <uses-permission android:name="com.change22.myapcc.permission.C2D_MESSAGE" />
+
+    <permission
+        android:name="com.change22.myapcc.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name=".config.MyApp"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+
+        <!--Satish map key-->
+        <!-- <meta-data
+             android:name="com.google.android.maps.v2.API_KEY"
+             android:value="AIzaSyB78pEXvgTJtyxRy_Wwi3otPAo0cBV19ug" />-->
+
+        <!--Ganesh Map key-->
+        <!--<meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="AIzaSyB1vc0H70xwa1FsBXFMIn_Fnm0KaozUmq0" />-->
+
+        <!--Ganesh Map key for all-->
+        <meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="AIzaSyCL3D33K0YijllGKGFKFMB_eLub4EFmhxU" />
+
+        <!--Ganesh Map key Playstore-->
+        <!--<meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAo8gIUcXzk5zqIR6uACIWTo2snVIrhVKo" />-->
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name=".config.AppBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.intent.action.TIME_TICK" />
+                <!--<action android:name="android.provider.Telephony.SMS_RECEIVED" />-->
+
+                <category android:name="com.change22.myapcc" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".config.AppService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".activities.Activity_dashboard"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activities.Activity_map"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Activity_issues"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Activity_upload_new_report"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Activity_splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.Activity_Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Activity_search"
+            android:label="@string/title_activity_activity_search"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.Activity_capture_photo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ActivityAboutUs"
+            android:screenOrientation="portrait"
+            android:theme="@style/About_us_theme">
+
+        </activity>
+        <activity
+            android:name=".activities.ActivityContactUs"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".activities.ActivityAreasWeCover"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+
+</manifest>
